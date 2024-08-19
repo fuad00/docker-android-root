@@ -78,6 +78,8 @@ emulator \
   -writable-system \
   -no-snapshot  || update_state "ANDROID_STOPPED"
 
+sleep 10
+
 /opt/rootAVD/rootAVD.sh /opt/android/system-images/android-*/*/*/ramdisk.img
 
   # -qemu \
