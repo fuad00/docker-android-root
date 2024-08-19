@@ -78,5 +78,10 @@ COPY scripts/start-emulator.sh /opt/
 COPY scripts/emulator-monitoring.sh /opt/
 RUN chmod +x /opt/*.sh
 
+# Copy rootAVD to the appropriate directory.
+COPY scripts/rootAVD/ /opt/rootAVD/
+RUN /opt/rootAVD/rootAVD.sh /opt/android/system-images/android-*/*/*/ramdisk.img
+# Something will be added here
+
 # Set the entrypoint
 ENTRYPOINT ["/opt/start-emulator.sh"]

@@ -1,0 +1,6 @@
+.DS_Store
+initramfs.img
+bzImage
+*.rc
+libbusybox*
+sbin*
