@@ -75,6 +75,7 @@ emulator \
   -ranchu \
   $AUTH_FLAG \
   -no-window \
+  -writable-system \
   -no-snapshot  || update_state "ANDROID_STOPPED"
 
 
