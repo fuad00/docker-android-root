@@ -659,7 +659,7 @@ ShutDownAVD() {
 		echo "[-] Shut-Down & Reboot (Cold Boot Now) the AVD and see if it worked"
 		echo "[-] Root and Su with Magisk for Android Studio AVDs"
 
-		ADBPULLECHO=$(adb shell setprop sys.powerctl shutdown 2>/dev/null)
+		ADBPULLECHO=$(adb shell setprop sys.powerctl reboot 2>/dev/null)
 		if [[ ! "$ADBPULLECHO" == *"error"* ]]; then
 			echo "[-] Trying to shut down the AVD"
 		fi
