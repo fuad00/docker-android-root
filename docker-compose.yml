@@ -3,7 +3,7 @@ services:
     build:
       context: .
       args:
-        - API_LEVEL=34
+        - API_LEVEL=33
         - CMD_LINE_VERSION=11076708_latest
         - IMG_TYPE=google_apis
     ports:
